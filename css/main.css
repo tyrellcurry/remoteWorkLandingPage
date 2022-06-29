@@ -78,6 +78,10 @@ main {
   vertical-align: top;
 }
 
+.testimonials > * {
+  cursor: pointer;
+}
+
 @media (min-width: 992px) {
   .navbar-nav {
     display: flex;
