@@ -46,7 +46,7 @@ main {
   display: flex;
   justify-content: center;
   max-width: 500px;
-  margin: auto;
+  justify-self: center;
 }
 
 .desktop-hero {
@@ -72,6 +72,10 @@ main {
 
 .navbar-brand {
   font-size: 2rem;
+}
+
+.img_section img {
+  vertical-align: top;
 }
 
 @media (min-width: 992px) {
@@ -100,14 +104,15 @@ main {
   }
   .content_section {
     text-align: left;
-    display: grid;
-    place-items: flex-end normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     padding: 0;
+    vertical-align: top;
   }
   .img_section {
     order: 1;
     padding-left: 5rem;
-    margin-left: auto;
   }
   .content_section h1 {
     font-size: 3.25rem;
