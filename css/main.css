@@ -32,7 +32,7 @@ main {
   color: var(--gray);
   padding-bottom: 1.5rem;
   font-size: 17px;
-  max-width: 600px;
+  max-width: 500px;
   margin: auto;
 }
 
@@ -101,12 +101,13 @@ main {
   .content_section {
     text-align: left;
     display: grid;
-    place-items: end;
+    place-items: flex-end normal;
     padding: 0;
   }
   .img_section {
     order: 1;
     padding-left: 5rem;
+    margin-left: auto;
   }
   .content_section h1 {
     font-size: 3.25rem;
@@ -114,12 +115,14 @@ main {
   }
   .content_section p {
     padding-bottom: 1.5rem;
-    max-width: 400px;
+    max-width: 100%;
   }
   .desktop-br {
     display: block;
   }
   .testimonials {
     max-width: 100%;
+    display: flex;
+    align-items: center;
   }
 }
